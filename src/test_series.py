@@ -21,3 +21,23 @@ def test_fib_6():
 def test_fib_20():
     from series import fib
     assert fib(20) == 6765
+
+
+def test_lucas_0():
+    from series import lucas
+    assert lucas(0) == 2
+
+
+def test_lucas_1():
+    from series import lucas
+    assert lucas(1) == 1
+
+
+def test_lucas_5():
+    from series import lucas
+    assert lucas(5) == 11
+
+
+def test_lucas_10():
+    from series import lucas
+    assert lucas(10) == 123
