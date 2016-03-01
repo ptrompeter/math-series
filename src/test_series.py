@@ -3,21 +3,21 @@
 import pytest
 
 
-def test_fib_1():
+def test_fib_0():
     from series import fib
-    assert fib(1) == 0
+    assert fib(0) == 0
 
 
 def test_fib_3():
     from series import fib
-    assert fib(3) == 1
+    assert fib(3) == 2
 
 
 def test_fib_6():
     from series import fib
-    assert fib(6) == 5
+    assert fib(6) == 8
 
 
 def test_fib_20():
     from series import fib
-    assert fib(20) == 4181
+    assert fib(20) == 6765
