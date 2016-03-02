@@ -1,34 +1,34 @@
 #_*_ coding: utf-8 _*_
 
 
-def fib(a):
+def fib(num):
     """Return value of ath number in fib sequence."""
-    if a <= 0:
+    if num <= 0:
         return 0
-    elif a == 1:
+    elif num == 1:
         return 1
     else:
-        return fib(a - 1) + fib(a - 2)
+        return fib(num - 1) + fib(num - 2)
 
 
-def lucas(a):
+def lucas(num):
     """Return value of ath number in lucas sequence."""
-    if a <= 0:
+    if num <= 0:
         return 2
-    elif a == 1:
+    elif num == 1:
         return 1
     else:
-        return lucas(a - 1) + lucas(a - 2)
+        return lucas(num - 1) + lucas(num - 2)
 
 
-def sum(a, b=0, c=1):
+def sum(num, first=0, second=1):
     """Return value of ath number in lucas sequence."""
-    if a <= 0:
-        return b
-    elif a == 1:
-        return c
+    if num <= 0:
+        return first
+    elif num == 1:
+        return second
     else:
-        return sum(a - 1, b, c) + sum(a - 2, b, c)
+        return sum(num - 1, first, second) + sum(num - 2, first, second)
 
 
 if __name__ == "__main__":
